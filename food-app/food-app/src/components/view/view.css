@@ -1,0 +1,64 @@
+.view_container {
+  padding: 10px 10px 10px 10px;
+
+  width: 90%;
+  margin: auto;
+  height: 78vh;
+  overflow-y: scroll;
+
+  margin-top: 4vh;
+}
+.card_container_view {
+  margin-top: 20px;
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 20px;
+  justify-content: space-around;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: black;
+  border-radius: 4px;
+}
+.title_view {
+  font-size: large;
+  font-weight: bold;
+  color: rgba(245, 177, 177, 0.744);
+}
+.content_view {
+  font-size: medium;
+  font-weight: 600;
+  color: rgba(238, 225, 225, 0.744);
+}
+.ingrident_container {
+  padding: 1%;
+  background-color: rgb(16, 14, 14);
+  width: 88%;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.image_container_view img {
+  border-radius: 4px;
+}
+.view_container::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .image_container_view {
+    width: 98%;
+    display: grid;
+    align-items: center;
+    margin: auto;
+  }
+  .image_container_view img {
+    margin: auto;
+    width: 95%;
+  }
+} ;
